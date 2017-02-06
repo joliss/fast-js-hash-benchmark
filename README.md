@@ -13,6 +13,8 @@ Scroll down for recommendations.
 * Native: [murmurhash-native](https://github.com/royaltm/node-murmurhash-native)
 * Pure JS: [js-spark-md5](https://github.com/satazor/js-spark-md5)
 * Pure JS: [imurmurhash](https://github.com/jensyt/imurmurhash-js)
+* Pure JS: [murmurhash-js](https://github.com/garycourt/murmurhash-js), via [murmurhash](https://github.com/perezd/node-murmurhash) and [murmurhash-js](https://github.com/mikolalysenko/murmurhash-js) Node packages
+* Pure JS: [murmur-hash](https://github.com/vnykmshr/murmur-hash)
 
 I also tested but excluded [fnv-lite](https://github.com/casetext/fnv-lite)
 and [fnv-plus](https://github.com/tjwebb/fnv-plus), because they were far too
