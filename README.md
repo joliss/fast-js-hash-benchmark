@@ -23,25 +23,29 @@ slow.
 ## Results
 
 ```
-create buf array: 744.725ms
-create string array: 102.209ms
+create buf array: 686.968ms
+create string array: 108.739ms
 
 incremental:
-64 xxhash (buffer): 100.239ms
-128 crypto md5 (buffer): 89.052ms
-128 spark-md5 (string): 198.852ms
-128 murmurhash-native (buffer): 157.417ms
-32 imurmurhash (string): 37.462ms
-buffer concat: 195.622ms
-string join: 33.085ms
-string to buffer: 4.443ms
+64 xxhash (buffer): 95.854ms
+128 crypto md5 (buffer): 88.443ms
+128 spark-md5 (string): 206.730ms
+128 murmurhash-native (buffer): 165.903ms
+32 imurmurhash (string): 47.539ms
+buffer concat: 178.362ms
+string join: 29.137ms
+string to buffer: 4.382ms
 
 single:
-64 xxhash (buffer): 0.643ms
-128 crypto md5 (buffer): 9.343ms
-128 spark-md5 (string): 78.169ms
-128 murmurhash-native (buffer): 1.349ms
-32 imurmurhash (string): 22.774ms
+64 xxhash (buffer): 0.875ms
+128 crypto md5 (buffer): 9.623ms
+128 spark-md5 (string): 80.058ms
+128 murmurhash-native (buffer): 1.341ms
+32 imurmurhash (string): 19.902ms
+32 murmurhash (string): 30.000ms
+32 murmurhash-js (string): 30.758ms
+32 murmur-hash (string): 38.936ms
+128 murmur-hash (string): 378.017ms
 ```
 
 ## Discussion and Recommendations
