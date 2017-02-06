@@ -52,9 +52,9 @@ single:
 
 * If you need a pure JS implementation:
 
-    * If you only need 32 bits, use [iMurmurHash](https://github.com/jensyt/imurmurhash-js). Note that this will give you collisions after about 2**14 (16,000) hashes.
+    * If you only need 32 bit digests, use [iMurmurHash](https://github.com/jensyt/imurmurhash-js). Note that this will give you collisions after about 2**14 (16,000) hashes.
 
-    * Use [SparkMD5](https://github.com/satazor/js-spark-md5) if you need more than 32 bits. I didn't find a fast 64 or 128 bit murmur implementation, but SparkMD5 was surprisingly fast (75 MB/sec).
+    * Use [SparkMD5](https://github.com/satazor/js-spark-md5) if you need more than 32 bits. I didn't find a fast 64 or 128 bit Murmur implementation, but SparkMD5 was surprisingly fast (75 MB/sec).
 
         * If you need incremental updates, consider joining strings into larger chunks before feeding them to SparkMD5, as SparkMD5's incremental hashing seems to suffer from some moderate overhead.
 
@@ -75,4 +75,4 @@ single:
 
         * If you need more than 32 bits: Use the built-in crypto module with the MD5 algorithm.
 
-            * I also recommend that you experiment with joining strings together into larger chunks, since strings are implicitly converted to Buffers when you pass them to the crypto module, and each Buffer creation is quite slow. Performance will generally be bottlenecked by Buffer creation and string joining, as the native hashing function is quite fast.
+            * I also recommend that you experiment with joining strings together into larger chunks, since strings are implicitly converted to Buffers when you pass them to the crypto module, and each Buffer creation is quite slow. Performance will generally be bottlenecked by Buffer creation and string joining, as the native hashing function is very fast in comparison.
