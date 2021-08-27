@@ -4,6 +4,11 @@ This is an ad-hoc benchmark of various hashing functions for non-cryptographic
 purposes. We test native and pure JS algorithms, different digest sizes, and
 incremental and single-call hashing.
 
+**Update (August 2021):** This benchmark predates
+[WebAssembly](https://webassembly.org/). There likely exist hash functions
+compiled into WebAssembly that beat the pure JS implementations. If somebody
+wants to update this benchmark, a pull request would be most welcome!
+
 Scroll down for recommendations.
 
 ## Libraries tested
